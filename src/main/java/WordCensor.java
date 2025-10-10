@@ -7,7 +7,7 @@ public class WordCensor {
         String sentence = scanner.nextLine();
 
 
-        System.out.println(sentence.replace("oops", "***")
+        System.out.println("Censored: " + sentence.replace("oops", "***")
                 .replace("dang", "***")
                 .replace("yikes", "***")
                 .replace("nuts", "***"));

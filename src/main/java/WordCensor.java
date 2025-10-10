@@ -2,9 +2,14 @@ import java.util.Scanner;
 
 public class WordCensor {
     public static void main(String[] args) {
-        // TODO: Read a full sentence from the user using Scanner.nextLine()
-        // TODO: Replace each banned word with exactly ***: dang, nuts, oops, yikes
-        // TODO: Print the result prefixed with: Censored:
-        // NOTE: Tests require exactly three asterisks (no ****) for every replacement
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a sentence: ");
+        String sentence = scanner.nextLine();
+
+
+        System.out.println(sentence.replace("oops", "***")
+                .replace("dang", "***")
+                .replace("yikes", "***")
+                .replace("nuts", "***"));
     }
 }
